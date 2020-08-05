@@ -1,0 +1,13 @@
+<h1>Bem-vindo ao Cookbook</h1>
+
+<% @recipes.each do |recipe| %>
+  <h3><%= recipe.title %></h3>
+  <dl>
+    <dt>Cozinha</dt>
+    <dd><%= recipe.cuisine %></dd>
+    <dt>Tipo</dt>
+    <dd><%= recipe.recipe_type %></dd>
+    <dt>Tempo de preparo</dt>
+    <dd><%= recipe.cook_time %> minuto(s)</dd>
+  </dl>
+<% end %>
