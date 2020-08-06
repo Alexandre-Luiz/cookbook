@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   # Verbo: Get no root // Manda para o controler 'home' // Ação: index
   #get '/', to: 'home#index'
   root to: 'home#index'
+  
+  #Cria uma série de rotas autimaticamente para mim. CUIDADO para não misturar plural com singular aqui.
+  resources :recipes
 end
