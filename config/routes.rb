@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   # Defino o verbo HTTP e para qual controller essa ação será enviada e qual ação será executada lá
 
   # Verbo: Get no root // Manda para o controler 'home' // Ação: index
-  get '/', to: 'home#index'
+  #get '/', to: 'home#index'
+  root to: 'home#index'
 end
