@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   #get '/', to: 'home#index'
   root to: 'home#index'
   
-  #Cria uma série de rotas autimaticamente para mim. CUIDADO para não misturar plural com singular aqui.
-  resources :recipes
+  #Cria uma série de rotas autimaticamente para mim. CUIDADO para não misturar plural com singular aqui e 
+  #cuidado com verbos irregulares
+  resources :recipes, only: [:new, :create]
 end

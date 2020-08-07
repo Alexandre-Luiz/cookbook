@@ -1,5 +1,9 @@
 <h1>Bem-vindo ao Cookbook</h1>
 
+<!-- <a href="/recipes/new"> Cadastras Receita</a> -->
+<!-- O link_to faz algo muito similar ao <a> do html -->
+<%= link_to 'Cadastrar Receita', new_recipe_path %>
+
 <% @recipes.each do |recipe| %>
   <h3><%= recipe.title %></h3>
   <dl>
